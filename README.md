@@ -1,5 +1,9 @@
 # School Management System - Web Application
-A simple web application for managing school, teachers, students, exam, result, report, schedule and so forth activities. The application is developed for the PHP biginners with a very simple and easy coding manner. So that, PHP biginners can easily understand the idea.
+A simple web application for managing school, teachers, students, exam, result, report, schedule and so forth activities. The application is developed (between 2010 and 2011) for the PHP biginners with a very simple and easy coding manner. So that, PHP biginners can easily understand the idea.
+
+
+## Development Period
+This simple PHP web-application is developed between 2010 and 2011. For the very PHP biginners to understand the basics of PHP and MySQL database connectivity and integration as well as interactive frontend implementation.
 
 
 ## Technology Used:
