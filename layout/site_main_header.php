@@ -1,0 +1,1 @@
+			<h2>School Management System (SMS)</h2>

@@ -1,0 +1,378 @@
+/** global **/
+body {
+	margin:40px auto;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+	background:#efefef url('../images/body-bg.jpg');
+}
+* {
+	margin:0;
+	padding:0;
+}
+
+
+/** element defaults **/
+table {
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+}
+th, td {
+	padding:5px 10px;
+}
+th {
+	color:#fff;
+	border-top:3px solid #1A668E;
+	background-color:#2284B8;
+}
+td {
+	border-bottom:1px solid #f4f4f4;
+}
+code, blockquote {
+	display:block;
+	border-left:5px solid #ddd;
+	padding:10px;
+	margin-bottom:20px;
+}
+blockquote p {
+	font-style:italic;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin:0;
+	height: 1%;
+}
+p {
+	line-height:1.9em;
+	margin-bottom:20px;
+}
+a {
+	color:#2284B8;
+	text-decoration:none;
+}
+a:hover {
+	color:#80B7D5;
+	text-decoration:underline;
+}
+a:focus {
+	outline:none;
+}
+div {
+	display:block;
+	border:none;
+	/*border-top:1px solid #e0e0e0;*/
+}
+div form {
+	padding-top:15px;
+}
+div p label {
+	float:left;
+	width:150px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+div form input, div form select, div form textarea {
+	padding:5px;
+	color:#333333;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	border:1px solid #ddd;
+}
+div form input.formbutton {
+	margin-left:150px;
+	background:#2284B8;
+	border:none;
+	border-bottom:3px solid #1A668E;
+	color:#ffffff;
+	font-weight:bold;
+	padding:5px 10px;
+	font-size:13px;
+	cursor:pointer;
+}
+input.formbutton {
+	margin-left:150px;
+	background:#2284B8;
+	border:none;
+	border-bottom:3px solid #1A668E;
+	color:#ffffff;
+	font-weight:bold;
+	padding:5px 10px;
+	font-size:13px;
+	cursor:pointer;
+}
+h1 {
+	font-size:45px;
+}
+h2 {
+	color:#2f2f2f;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	letter-spacing:-2px;
+	padding:0 0 5px;
+	margin:0;
+}
+h3 {
+	color:#333333;
+	font-size:20px;
+	padding-bottom:10px;
+}
+h4 {
+	padding-bottom:10px;
+	font-size:15px;
+	color:#2284B8;
+}
+h5 {
+	padding-bottom:10px;
+	font-size:13px;
+	color:#666666;
+}
+ul, ol {
+	margin:0 0 35px 35px;
+}
+li {
+	padding-bottom:5px;
+}
+
+
+/** wrapper **/
+div#wrapper {
+	width:920px;
+	margin:0px auto;
+	padding:0;
+	border-bottom:10px solid #1A668E;
+}
+
+
+/** sitename **/
+div#sitename h1 {
+	color:#549FC7;
+	font-size:48px;
+	font-weight:bold;
+	letter-spacing:-5px;
+	margin:0;
+	padding:0 0 15px;
+}
+div#sitename h1 a,
+div#sitename h1 a:hover {
+	color:#549FC7;
+	text-decoration:none;
+}
+
+
+/** nav **/
+div#nav {
+	background:#0D3448 url('../images/nav-bg.jpg') repeat-x scroll top left;
+	height:40px;
+}
+div#nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	border-right:1px solid #09232F;
+}
+div#nav ul li {
+	float:left;
+	padding-bottom:0;
+	display:block;
+}
+div#nav ul li a,
+div#nav ul li a:visited,
+div#nav ul li a:active,
+div#nav ul li a:link {
+	color:#fff;
+	display:block;
+	float:left;
+	text-decoration:none;
+	font-size:13px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	cursor:pointer;
+}
+div#nav ul li.current a {
+	background:transparent url('../images/item-right.jpg') no-repeat scroll top right;
+}
+div#nav ul li.current a span,
+div#nav ul li.current a:visited span,
+div#nav ul li.current a:hover span,
+div#nav ul li.current a:active span,
+div#nav ul li.current a:link span {
+	background:transparent url('../images/item-left.jpg') no-repeat scroll top left;
+	border:none;
+	padding:18px 15px 12px;
+}
+div#nav ul li.current a {
+	margin-top:-6px;
+}
+div#nav ul li a span {
+	padding:12px 15px 12px;
+	border-right:1px solid #1F4A61;
+	border-left:1px solid #09232F;
+	display:block;
+	float:left;
+	background:transparent none;
+}
+div#nav ul li a:hover span {
+	background:transparent url('../images/nav-bg-hover.jpg') repeat-x scroll top left;
+} 
+
+
+/** header **/
+div#header {
+	padding:40px 20px;
+	margin:0 auto;
+	background:#2284B8 url('../images/header-bg.jpg') repeat-x scroll bottom left;
+}
+div#header h2 {
+	color:#ffffff;
+	padding-bottom:0;
+	font-weight:normal;
+	letter-spacing:0;
+}
+div#header div.tagline {
+	color:#fff;
+	font-size:14px;
+	padding-bottom:10px;
+}
+div#header div.tagline a {
+	color:#ffffff;
+}
+
+
+/** body **/
+div#body {
+	padding:10px 10px;
+	background:#fff url('../images/content-bg.jpg') repeat-x scroll top left;
+}
+
+
+/** content+sidebar styles **/
+div#content {
+	width:635px;
+}
+div.column-left {
+	float:left;
+	margin-right:20px;
+}
+div.column-right {
+	float:right;
+}
+div#sidebar {
+	width:230px;
+}
+div#sidebar ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+div#sidebar li ul {
+	border-top:1px solid #ddd;
+	margin-bottom:20px;
+}
+div#sidebar li ul li {
+	display:block;
+	padding:7px 15px;
+	border-bottom:1px solid #ddd;
+	color:#777;
+}
+div#sidebar li ul li a {
+	color:#2284B8;
+	text-decoration:none;
+	font-family:"Trebuchet MS", Verdana, Arial;
+	font-weight:bold;
+}
+div#sidebar li ul li a:hover {
+	color:#1F75A3;
+	text-decoration:underline;
+}
+div#sidebar h4 { 
+	color:#0B2735;
+	font-family:arial;
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin:0;
+	padding:7px 10px;
+}
+
+
+/** footer **/
+div#footer {
+	background:#2284B8;
+	padding:20px 20px;
+	color:#fff;
+	border-bottom:1px solid #2694CF;
+}
+div#footer p {
+	color:#fff;
+	margin:0;
+	font-size:11px;
+	width:50%;
+}
+div#footer p.left { float:left; }
+div#footer p.right { float:right; text-align:right; }
+div#footer p a {
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	border-bottom:1px solid #fff;
+}
+div#footer p a:hover {
+	background-color:#1A668E;
+}
+
+
+/** clear fix **/
+.clear:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clear {
+	display: inline-block;
+}
+.clear {
+	display: block;
+}
+
+#signup_form form p input[type='text'], input[type='password']{
+	width: 300px;
+}
+
+
+.step{
+    color: #2284B8 !important;
+    font-family: "Trebuchet MS",Verdana,Arial;
+    font-weight: bold;
+    text-decoration: none;
+	font-size: 13px;
+}
+#signup_form span.required
+{
+	color:#CC0000;
+	font-size:20px;
+}
+
+#request ul li
+{
+	color:#2284B8;
+	cursor:pointer;
+}
+
+#request ul li a
+{
+	text-decoration:none;
+	color:#2284B8;
+	cursor:pointer;
+}
+#request ul li a:hover
+{
+	text-decoration:none;
+	color:#2284B8;
+	cursor:pointer;
+}
